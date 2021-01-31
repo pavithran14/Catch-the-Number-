@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:id="@+id/c11"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_275sdp"
+        android:id="@+id/c1"
+        android:clickable="true"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#FFBB00"
+        android:onClick="timer1"
+        >
+        <TextView
+            android:id="@+id/p1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Player A"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="@dimen/_20sdp"
+            tools:ignore="MissingConstraints"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_287sdp"
+        android:id="@+id/c2"
+        android:clickable="true"
+        app:layout_constraintTop_toBottomOf="@id/c1"
+        android:background="#FF0000"
+        android:onClick="timer2">
+        <TextView
+            android:id="@+id/p2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Player B"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_20sdp"
+            tools:ignore="MissingConstraints">
+        </TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
